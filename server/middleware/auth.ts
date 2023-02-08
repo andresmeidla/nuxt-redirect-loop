@@ -23,5 +23,6 @@ export default defineEventHandler((event) => {
   }
   console.log('Redirecting to login', event.node.req.url);
   // redirecting
-  return sendRedirect(event, `/login?initial=${event.node.req.url}`, 307);
+  // return sendRedirect(event, `/login?initial=${event.node.req.url}`, 307);
+  return sendRedirect(event, '/login', 307);
 });
